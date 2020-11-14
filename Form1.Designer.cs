@@ -146,6 +146,7 @@
             this.linkRecords.TabIndex = 4;
             this.linkRecords.TabStop = true;
             this.linkRecords.Text = "Historial Cotizaciones";
+            this.linkRecords.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRecords_LinkClicked);
             // 
             // linkSeller
             // 

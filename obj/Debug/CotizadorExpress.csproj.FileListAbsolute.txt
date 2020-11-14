@@ -8,3 +8,4 @@ C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\
 C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.csproj.CoreCompileInputs.cache
 C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.exe
 C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.pdb
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.Form2.resources

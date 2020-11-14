@@ -17,13 +17,15 @@ namespace CotizadorExpress
         ArrayList QuotesList = new ArrayList();
         int QuoteID = 0;
         Seller my_seller = new Seller("Hideo", "Kojima");
+
+
+
         public Form1()
         {
             InitializeComponent();
             shopName.Text = my_store.Store_name;
             shopAdress.Text = my_store.Store_adress;
             linkSeller.Text = my_seller.Seller_name + " " + my_seller.Seller_surname + "  |  Codigo: " + my_seller.Id_seller;
-            
         }
 
         private void radioBtnShirt_CheckedChanged(object sender, EventArgs e)
@@ -151,10 +153,9 @@ namespace CotizadorExpress
                 {
                     total *= 1.3;
                 }
-
                 labelQuote.Text = "$ " + total;
                 QuoteGenerator(quantity, (float)total);
-                Console.WriteLine(QuotesList[0]);
+
 
             }
             catch
@@ -166,6 +167,7 @@ namespace CotizadorExpress
 
         private void QuoteGenerator(int quantity, float total)
         {
+            
             DateTime now = DateTime.Now;
             String clothing = "unknown";
             if (radioBtnShirt.Checked)
@@ -179,6 +181,14 @@ namespace CotizadorExpress
             Quote Q = new Quote(QuoteID, now.Date, my_seller.Id_seller,clothing, quantity, total);
             QuoteID++;
             QuotesList.Add(Q);
+        }
+
+        private void linkRecords_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 grafica = new Form2();
+            string seller = my_seller.Seller_name + " " + my_seller.Seller_surname;
+            grafica.WriteCell(QuotesList, seller);
+            grafica.ShowDialog();
         }
     }
 }
