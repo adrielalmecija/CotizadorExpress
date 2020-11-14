@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace CotizadorExpress
 {
-    class Clothe
+    abstract class Clothe
     {
-        private int quality;
-        private float price;
-        private long quantity;
+        protected int quality;
+        protected float price;
+        protected long quantity;
 
-        
+        protected Clothe(int quality, float price, long quantity)
+        {
+            this.quality = quality;
+            this.price = price;
+            this.quantity = quantity;
+        }
     }
 }

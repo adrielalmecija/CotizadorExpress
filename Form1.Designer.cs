@@ -55,8 +55,8 @@
             this.radioBtnPant = new System.Windows.Forms.RadioButton();
             this.radioBtnShirt = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnQuote = new System.Windows.Forms.Button();
             this.labelQuote = new System.Windows.Forms.Label();
+            this.btnQuote = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -108,7 +108,7 @@
             this.shopAdress.AutoSize = true;
             this.shopAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shopAdress.ForeColor = System.Drawing.Color.Indigo;
-            this.shopAdress.Location = new System.Drawing.Point(479, 13);
+            this.shopAdress.Location = new System.Drawing.Point(469, 13);
             this.shopAdress.Name = "shopAdress";
             this.shopAdress.Size = new System.Drawing.Size(90, 20);
             this.shopAdress.TabIndex = 1;
@@ -367,6 +367,16 @@
             this.panel5.Size = new System.Drawing.Size(704, 100);
             this.panel5.TabIndex = 4;
             // 
+            // labelQuote
+            // 
+            this.labelQuote.AutoSize = true;
+            this.labelQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuote.Location = new System.Drawing.Point(441, 34);
+            this.labelQuote.Name = "labelQuote";
+            this.labelQuote.Size = new System.Drawing.Size(197, 39);
+            this.labelQuote.TabIndex = 1;
+            this.labelQuote.Text = "$ ________";
+            // 
             // btnQuote
             // 
             this.btnQuote.BackColor = System.Drawing.Color.Indigo;
@@ -378,16 +388,6 @@
             this.btnQuote.TabIndex = 0;
             this.btnQuote.Text = "Cotizar";
             this.btnQuote.UseVisualStyleBackColor = false;
-            // 
-            // labelQuote
-            // 
-            this.labelQuote.AutoSize = true;
-            this.labelQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuote.Location = new System.Drawing.Point(441, 34);
-            this.labelQuote.Name = "labelQuote";
-            this.labelQuote.Size = new System.Drawing.Size(197, 39);
-            this.labelQuote.TabIndex = 1;
-            this.labelQuote.Text = "$ ________";
             // 
             // Form1
             // 
