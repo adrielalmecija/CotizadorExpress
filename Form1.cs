@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +13,15 @@ namespace CotizadorExpress
 {
     public partial class Form1 : Form
     {
-            Store my_store = new Store();
+        Store my_store = new Store();
+        ArrayList QuotesList = new ArrayList();
+        int QuoteID = 0;
+        Seller my_seller = new Seller("Hideo", "Kojima");
         public Form1()
         {
             InitializeComponent();
             shopName.Text = my_store.Store_name;
             shopAdress.Text = my_store.Store_adress;
-            Seller my_seller = new Seller("Hideo", "Kojima");
             linkSeller.Text = my_seller.Seller_name + " " + my_seller.Seller_surname + "  |  Codigo: " + my_seller.Id_seller;
             
         }
@@ -121,6 +124,8 @@ namespace CotizadorExpress
             checkBoxNotCommon.Checked);
         }
 
+
+        //<<Button Quote Click Event>>
         private void btnQuote_Click(object sender, EventArgs e)
         {
             try
@@ -148,12 +153,32 @@ namespace CotizadorExpress
                 }
 
                 labelQuote.Text = "$ " + total;
+                QuoteGenerator(quantity, (float)total);
+                Console.WriteLine(QuotesList[0]);
+
             }
             catch
             {
                 MessageBox.Show("Por favor ingrese numeros validos");
             }
 
+        }
+
+        private void QuoteGenerator(int quantity, float total)
+        {
+            DateTime now = DateTime.Now;
+            String clothing = "unknown";
+            if (radioBtnShirt.Checked)
+            {
+                clothing = "Camisa";
+            }
+            else
+            {
+                clothing = "Pantalon";
+            }
+            Quote Q = new Quote(QuoteID, now.Date, my_seller.Id_seller,clothing, quantity, total);
+            QuoteID++;
+            QuotesList.Add(Q);
         }
     }
 }
