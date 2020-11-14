@@ -39,9 +39,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxQuantity = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.radioBtnPremium = new System.Windows.Forms.RadioButton();
             this.radioBtnStandard = new System.Windows.Forms.RadioButton();
@@ -174,9 +174,9 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.textBoxQuantity);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.textBoxPrice);
             this.groupBox4.Location = new System.Drawing.Point(365, 219);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(319, 73);
@@ -194,12 +194,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Cantidad";
             // 
-            // textBox2
+            // textBoxQuantity
             // 
-            this.textBox2.Location = new System.Drawing.Point(238, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(66, 22);
-            this.textBox2.TabIndex = 3;
+            this.textBoxQuantity.Location = new System.Drawing.Point(238, 34);
+            this.textBoxQuantity.Name = "textBoxQuantity";
+            this.textBoxQuantity.Size = new System.Drawing.Size(66, 22);
+            this.textBoxQuantity.TabIndex = 3;
             // 
             // label2
             // 
@@ -211,12 +211,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "$";
             // 
-            // textBox1
+            // textBoxPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(83, 22);
-            this.textBox1.TabIndex = 0;
+            this.textBoxPrice.Location = new System.Drawing.Point(40, 35);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(83, 22);
+            this.textBoxPrice.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -289,7 +289,7 @@
             this.groupBox1.Controls.Add(this.radioBtnPant);
             this.groupBox1.Controls.Add(this.radioBtnShirt);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(20, 20);
+            this.groupBox1.Location = new System.Drawing.Point(20, 25);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
@@ -308,6 +308,7 @@
             this.checkBoxNotCommon.TabIndex = 4;
             this.checkBoxNotCommon.Text = "Chupin";
             this.checkBoxNotCommon.UseVisualStyleBackColor = true;
+            this.checkBoxNotCommon.CheckedChanged += new System.EventHandler(this.checkBoxNotCommon_CheckedChanged);
             // 
             // checkBoxMao
             // 
@@ -319,6 +320,7 @@
             this.checkBoxMao.TabIndex = 3;
             this.checkBoxMao.Text = "Cuello mao";
             this.checkBoxMao.UseVisualStyleBackColor = true;
+            this.checkBoxMao.CheckedChanged += new System.EventHandler(this.checkBoxMao_CheckedChanged);
             // 
             // checkBoxShortSleeve
             // 
@@ -330,6 +332,7 @@
             this.checkBoxShortSleeve.TabIndex = 2;
             this.checkBoxShortSleeve.Text = "Manga Corta";
             this.checkBoxShortSleeve.UseVisualStyleBackColor = true;
+            this.checkBoxShortSleeve.CheckedChanged += new System.EventHandler(this.checkBoxShortSleeve_CheckedChanged);
             // 
             // radioBtnPant
             // 
@@ -354,6 +357,7 @@
             this.radioBtnShirt.TabStop = true;
             this.radioBtnShirt.Text = "Camisa";
             this.radioBtnShirt.UseVisualStyleBackColor = true;
+            this.radioBtnShirt.CheckedChanged += new System.EventHandler(this.radioBtnShirt_CheckedChanged);
             // 
             // panel5
             // 
@@ -388,6 +392,7 @@
             this.btnQuote.TabIndex = 0;
             this.btnQuote.Text = "Cotizar";
             this.btnQuote.UseVisualStyleBackColor = false;
+            this.btnQuote.Click += new System.EventHandler(this.btnQuote_Click);
             // 
             // Form1
             // 
@@ -434,9 +439,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxQuantity;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton radioBtnPremium;
         private System.Windows.Forms.RadioButton radioBtnStandard;
