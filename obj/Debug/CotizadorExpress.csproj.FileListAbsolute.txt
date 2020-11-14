@@ -1,0 +1,10 @@
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\bin\Debug\CotizadorExpress.exe.config
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\bin\Debug\CotizadorExpress.exe
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\bin\Debug\CotizadorExpress.pdb
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.csprojAssemblyReference.cache
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.Form1.resources
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.Properties.Resources.resources
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.csproj.GenerateResource.cache
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.csproj.CoreCompileInputs.cache
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.exe
+C:\Users\Turbioh\Source\Repos\adrielalmecija\GlobalCitizen\CotizadorExpress\obj\Debug\CotizadorExpress.pdb
